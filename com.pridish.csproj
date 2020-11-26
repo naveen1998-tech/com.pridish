@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72F129D1-798B-43E0-A2C4-C032EB2807B9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.pridish</RootNamespace>
+    <AssemblyName>com.pridish</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add_Customer.aspx" />
+    <Content Include="Add_Inventory.aspx" />
+    <Content Include="Add_office_Expense.aspx" />
+    <Content Include="Add_Product_Master.aspx" />
+    <Content Include="Add_Stock_Master.aspx" />
+    <Content Include="Add_Vendor.aspx" />
+    <Content Include="Company_Settings.aspx" />
+    <Content Include="Currency_Form.aspx" />
+    <Content Include="Currency_Listing.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Employee_Form.aspx" />
+    <Content Include="jquery-3.3.1.js" />
+    <Content Include="List_Customer.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logo\icon-edit.png" />
+    <Content Include="Logo\login-page-background-8.jpg" />
+    <Content Include="Logo\login_Logo.jpg" />
+    <Content Include="Logo\Logo-Bizz-App.png" />
+    <Content Include="Logo\photo-1518215069569-0781b2f8cc69.jpg" />
+    <Content Include="Logo\Simple-Abstract-Backgrounds.jpg" />
+    <Content Include="Logo\Transprant-3.png" />
+    <Content Include="RDLC_Quotation_Report.aspx" />
+    <Content Include="Transaction\add_Cash_Memo.aspx" />
+    <Content Include="Transaction\add_Delivery_Note.aspx" />
+    <Content Include="Transaction\add_Goods_Return.aspx" />
+    <Content Include="Transaction\add_Grv_Form.aspx" />
+    <Content Include="Transaction\add_Inquiry.aspx" />
+    <Content Include="Transaction\add_Invoice.aspx" />
+    <Content Include="Transaction\add_Material_Received.aspx" />
+    <Content Include="Transaction\Add_Purchase_Order.aspx" />
+    <Content Include="Transaction\add_Quotation.aspx" />
+    <Content Include="Transaction\add_Sales_Order.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Employee_List.aspx" />
+    <Content Include="Vendor_List.aspx" />
+    <Content Include="Office_Expence_List.aspx" />
+    <Content Include="Product_List.aspx" />
+    <Content Include="Transaction\WebForm1.aspx" />
+    <Content Include="Transaction\RFQ_List.aspx" />
+    <Content Include="Transaction\Quotation_List.aspx" />
+    <Content Include="Transaction\Sales_Order_List.aspx" />
+    <Content Include="Transaction\Product_Order_List.aspx" />
+    <Content Include="Transaction\Delivery_Note_List.aspx" />
+    <Content Include="Transaction\Invoice_List.aspx" />
+    <Content Include="Transaction\Cash_Memo_List.aspx" />
+    <Content Include="Transaction\MRN_List.aspx" />
+    <Content Include="Transaction\GRN_List.aspx" />
+    <Content Include="Transaction\GRV_List.aspx" />
+    <Content Include="Company_Setting_List.aspx" />
+    <Content Include="Sales_Order_Report.aspx" />
+    <Content Include="Purchase_Order_Report.aspx" />
+    <Content Include="Stock_List.aspx" />
+    <Content Include="Cash_Memo_RDLC_Report.aspx" />
+    <Content Include="Invoice_RDLC_Report.aspx" />
+    <Content Include="MRN_RDLC_Report.aspx" />
+    <Content Include="GRN_RDLC_Report.aspx" />
+    <Content Include="Delivery_Note_RDLC_Report.aspx" />
+    <Content Include="GRV_RDLC_Report.aspx" />
+    <Content Include="Payments.aspx" />
+    <Content Include="Payment_List.aspx" />
+    <Content Include="Cheque_Payment.aspx" />
+    <Content Include="Cheque_Payment_List.aspx" />
+    <Content Include="CashMemo_payment.aspx" />
+    <Content Include="CashMemo_Payment_List.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Customer.aspx.cs">
+      <DependentUpon>Add_Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Customer.aspx.designer.cs">
+      <DependentUpon>Add_Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Inventory.aspx.cs">
+      <DependentUpon>Add_Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Inventory.aspx.designer.cs">
+      <DependentUpon>Add_Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_office_Expense.aspx.cs">
+      <DependentUpon>Add_office_Expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_office_Expense.aspx.designer.cs">
+      <DependentUpon>Add_office_Expense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Product_Master.aspx.cs">
+      <DependentUpon>Add_Product_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Product_Master.aspx.designer.cs">
+      <DependentUpon>Add_Product_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Stock_Master.aspx.cs">
+      <DependentUpon>Add_Stock_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Stock_Master.aspx.designer.cs">
+      <DependentUpon>Add_Stock_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Vendor.aspx.cs">
+      <DependentUpon>Add_Vendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Vendor.aspx.designer.cs">
+      <DependentUpon>Add_Vendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonUtil.cs" />
+    <Compile Include="Company_Settings.aspx.cs">
+      <DependentUpon>Company_Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Settings.aspx.designer.cs">
+      <DependentUpon>Company_Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Currency_Form.aspx.cs">
+      <DependentUpon>Currency_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Currency_Form.aspx.designer.cs">
+      <DependentUpon>Currency_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Currency_Listing.aspx.cs">
+      <DependentUpon>Currency_Listing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Currency_Listing.aspx.designer.cs">
+      <DependentUpon>Currency_Listing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Form.aspx.cs">
+      <DependentUpon>Employee_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_Form.aspx.designer.cs">
+      <DependentUpon>Employee_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="List_Customer.aspx.cs">
+      <DependentUpon>List_Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List_Customer.aspx.designer.cs">
+      <DependentUpon>List_Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RDLC_Quotation_Report.aspx.cs">
+      <DependentUpon>RDLC_Quotation_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RDLC_Quotation_Report.aspx.designer.cs">
+      <DependentUpon>RDLC_Quotation_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Cash_Memo.aspx.cs">
+      <DependentUpon>add_Cash_Memo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Cash_Memo.aspx.designer.cs">
+      <DependentUpon>add_Cash_Memo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Delivery_Note.aspx.cs">
+      <DependentUpon>add_Delivery_Note.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Delivery_Note.aspx.designer.cs">
+      <DependentUpon>add_Delivery_Note.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Goods_Return.aspx.cs">
+      <DependentUpon>add_Goods_Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Goods_Return.aspx.designer.cs">
+      <DependentUpon>add_Goods_Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Grv_Form.aspx.cs">
+      <DependentUpon>add_Grv_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Grv_Form.aspx.designer.cs">
+      <DependentUpon>add_Grv_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Inquiry.aspx.cs">
+      <DependentUpon>add_Inquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Inquiry.aspx.designer.cs">
+      <DependentUpon>add_Inquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Invoice.aspx.cs">
+      <DependentUpon>add_Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Invoice.aspx.designer.cs">
+      <DependentUpon>add_Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Material_Received.aspx.cs">
+      <DependentUpon>add_Material_Received.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Material_Received.aspx.designer.cs">
+      <DependentUpon>add_Material_Received.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Add_Purchase_Order.aspx.cs">
+      <DependentUpon>Add_Purchase_Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Add_Purchase_Order.aspx.designer.cs">
+      <DependentUpon>Add_Purchase_Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Quotation.aspx.cs">
+      <DependentUpon>add_Quotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Quotation.aspx.designer.cs">
+      <DependentUpon>add_Quotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\add_Sales_Order.aspx.cs">
+      <DependentUpon>add_Sales_Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\add_Sales_Order.aspx.designer.cs">
+      <DependentUpon>add_Sales_Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_List.aspx.cs">
+      <DependentUpon>Employee_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_List.aspx.designer.cs">
+      <DependentUpon>Employee_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor_List.aspx.cs">
+      <DependentUpon>Vendor_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vendor_List.aspx.designer.cs">
+      <DependentUpon>Vendor_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office_Expence_List.aspx.cs">
+      <DependentUpon>Office_Expence_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Office_Expence_List.aspx.designer.cs">
+      <DependentUpon>Office_Expence_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product_List.aspx.cs">
+      <DependentUpon>Product_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product_List.aspx.designer.cs">
+      <DependentUpon>Product_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\RFQ_List.aspx.cs">
+      <DependentUpon>RFQ_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\RFQ_List.aspx.designer.cs">
+      <DependentUpon>RFQ_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Quotation_List.aspx.cs">
+      <DependentUpon>Quotation_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Quotation_List.aspx.designer.cs">
+      <DependentUpon>Quotation_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Sales_Order_List.aspx.cs">
+      <DependentUpon>Sales_Order_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Sales_Order_List.aspx.designer.cs">
+      <DependentUpon>Sales_Order_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Product_Order_List.aspx.cs">
+      <DependentUpon>Product_Order_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Product_Order_List.aspx.designer.cs">
+      <DependentUpon>Product_Order_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Delivery_Note_List.aspx.cs">
+      <DependentUpon>Delivery_Note_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Delivery_Note_List.aspx.designer.cs">
+      <DependentUpon>Delivery_Note_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Invoice_List.aspx.cs">
+      <DependentUpon>Invoice_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Invoice_List.aspx.designer.cs">
+      <DependentUpon>Invoice_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Cash_Memo_List.aspx.cs">
+      <DependentUpon>Cash_Memo_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Cash_Memo_List.aspx.designer.cs">
+      <DependentUpon>Cash_Memo_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\MRN_List.aspx.cs">
+      <DependentUpon>MRN_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\MRN_List.aspx.designer.cs">
+      <DependentUpon>MRN_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\GRN_List.aspx.cs">
+      <DependentUpon>GRN_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\GRN_List.aspx.designer.cs">
+      <DependentUpon>GRN_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\GRV_List.aspx.cs">
+      <DependentUpon>GRV_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\GRV_List.aspx.designer.cs">
+      <DependentUpon>GRV_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Setting_List.aspx.cs">
+      <DependentUpon>Company_Setting_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Setting_List.aspx.designer.cs">
+      <DependentUpon>Company_Setting_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_Order_Report.aspx.cs">
+      <DependentUpon>Sales_Order_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales_Order_Report.aspx.designer.cs">
+      <DependentUpon>Sales_Order_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_Order_Report.aspx.cs">
+      <DependentUpon>Purchase_Order_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase_Order_Report.aspx.designer.cs">
+      <DependentUpon>Purchase_Order_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_List.aspx.cs">
+      <DependentUpon>Stock_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock_List.aspx.designer.cs">
+      <DependentUpon>Stock_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cash_Memo_RDLC_Report.aspx.cs">
+      <DependentUpon>Cash_Memo_RDLC_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cash_Memo_RDLC_Report.aspx.designer.cs">
+      <DependentUpon>Cash_Memo_RDLC_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice_RDLC_Report.aspx.cs">
+      <DependentUpon>Invoice_RDLC_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice_RDLC_Report.aspx.designer.cs">
+      <DependentUpon>Invoice_RDLC_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MRN_RDLC_Report.aspx.cs">
+      <DependentUpon>MRN_RDLC_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MRN_RDLC_Report.aspx.designer.cs">
+      <DependentUpon>MRN_RDLC_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRN_RDLC_Report.aspx.cs">
+      <DependentUpon>GRN_RDLC_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRN_RDLC_Report.aspx.designer.cs">
+      <DependentUpon>GRN_RDLC_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery_Note_RDLC_Report.aspx.cs">
+      <DependentUpon>Delivery_Note_RDLC_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery_Note_RDLC_Report.aspx.designer.cs">
+      <DependentUpon>Delivery_Note_RDLC_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRV_RDLC_Report.aspx.cs">
+      <DependentUpon>GRV_RDLC_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRV_RDLC_Report.aspx.designer.cs">
+      <DependentUpon>GRV_RDLC_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.aspx.cs">
+      <DependentUpon>Payments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payments.aspx.designer.cs">
+      <DependentUpon>Payments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_List.aspx.cs">
+      <DependentUpon>Payment_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment_List.aspx.designer.cs">
+      <DependentUpon>Payment_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque_Payment.aspx.cs">
+      <DependentUpon>Cheque_Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cheque_Payment.aspx.designer.cs">
+      <DependentUpon>Cheque_Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque_Payment_List.aspx.cs">
+      <DependentUpon>Cheque_Payment_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cheque_Payment_List.aspx.designer.cs">
+      <DependentUpon>Cheque_Payment_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CashMemo_payment.aspx.cs">
+      <DependentUpon>CashMemo_payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CashMemo_payment.aspx.designer.cs">
+      <DependentUpon>CashMemo_payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CashMemo_Payment_List.aspx.cs">
+      <DependentUpon>CashMemo_Payment_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CashMemo_Payment_List.aspx.designer.cs">
+      <DependentUpon>CashMemo_Payment_List.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Logo\sunset.jpg.exclude" />
+    <Content Include="MasterPage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Quotation_Report1.rdlc" />
+    <EmbeddedResource Include="Purchase_Report.rdlc" />
+    <EmbeddedResource Include="CashMeno.rdlc" />
+    <EmbeddedResource Include="Invoice.rdlc" />
+    <EmbeddedResource Include="MRN.rdlc" />
+    <EmbeddedResource Include="GRN.rdlc" />
+    <EmbeddedResource Include="DeliveryNote.rdlc" />
+    <EmbeddedResource Include="GRV.rdlc" />
+    <EmbeddedResource Include="Sales_Order.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1386</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

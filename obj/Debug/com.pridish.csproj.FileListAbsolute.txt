@@ -1,0 +1,6 @@
+D:\tyit asp program\naveen\com.pridish\com.pridish\bin\com.pridish.dll
+D:\tyit asp program\naveen\com.pridish\com.pridish\bin\com.pridish.pdb
+D:\tyit asp program\naveen\com.pridish\com.pridish\obj\Debug\com.pridish.dll
+D:\tyit asp program\naveen\com.pridish\com.pridish\obj\Debug\com.pridish.pdb
+D:\tyit asp program\naveen\com.pridish\com.pridish\obj\Debug\RdlCompile.cache
+D:\tyit asp program\naveen\com.pridish\com.pridish\obj\Debug\RdlCompile.compiled
